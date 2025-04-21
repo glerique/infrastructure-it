@@ -24,3 +24,18 @@ INSERT INTO inventory.poste (n_poste, nom_poste, n_segment, ad, type_poste, n_sa
 ('P10','Poste 10','130.120.81','03','UNIX','S12'),
 ('P11','Poste 11','130.120.82','01','PCXP','S21'),
 ('P12','Poste 12','130.120.82','02','PCXP','S21');
+
+-- Modification de la date d'insertion pour le format DMY
+-- En PostgreSQL, la date est au format YYYY-MM-DD
+SET datestyle = 'DMY';
+
+INSERT INTO inventory.logiciel (n_logiciel, nom_logiciel, date_achat, version, type_logiciel) VALUES
+('Log1', 'Oracle 9i', '13/05/2021', '9.2', 'UNIX'), 
+('Log2', 'Oracle 10g', '15/09/2020', '10.1', 'UNIX'), 
+('Log3', 'Sql Server', '12/04/2022', '2020SE', 'PCXP'),
+('Log4', '4D', '03/06/2020', '2019.4', 'PCXP'), 
+('Log5', 'Windev', '12/11/2021', '10', 'PCWS'),
+('Log6',  'Sql*Net', '13/05/2021', '2.5', 'UNIX'), 
+('Log7',  'I. I. S.', '12/04/2020', '6.0', 'PCXP'), 
+('Log8',  'Autocad', '21/03/2022', 'AU2019', 'PCWS');
+
