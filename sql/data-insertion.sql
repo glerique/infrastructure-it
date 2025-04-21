@@ -11,4 +11,16 @@ INSERT INTO inventory.salle (n_salle, nom_salle, nb_poste, n_segment) VALUES
 ('S12', 'Salle 12', 1, '130.120.81'),
 ('S21', 'Salle 21', 2, '130.120.82'); 
 
-
+INSERT INTO inventory.poste (n_poste, nom_poste, n_segment, ad, type_poste, n_salle) VALUES
+('P1', 'Poste 1', '130.120.80', '01', 'TX', 'S01'),
+('P2', 'Poste 2', '130.120.80', '02', 'UNIX', 'S01'),
+('P3', 'Poste 3', '130.120.80', '03', 'TX', 'S01'),
+('P4', 'Poste 4', '130.120.80', '04', 'PCWS', 'S02'),
+('P5', 'Poste 5', '130.120.80', '05', 'PCWS', 'S02'),
+('P6', 'Poste 6', '130.120.80', '06', 'UNIX', 'S03'),
+('P7', 'Poste 7', '130.120.80', '07', 'TX', 'S03'),
+('P8', 'Poste 8', '130.120.81', '01', 'UNIX', 'S11'),
+('P9', 'Poste 9', '130.120.81', '02', 'TX','S11'),
+('P10','Poste 10','130.120.81','03','UNIX','S12'),
+('P11','Poste 11','130.120.82','01','PCXP','S21'),
+('P12','Poste 12','130.120.82','02','PCXP','S21');
