@@ -39,3 +39,14 @@ INSERT INTO inventory.logiciel (n_logiciel, nom_logiciel, date_achat, version, t
 ('Log7',  'I. I. S.', '12/04/2020', '6.0', 'PCXP'), 
 ('Log8',  'Autocad', '21/03/2022', 'AU2019', 'PCWS');
 
+INSERT INTO inventory.installer (n_poste, n_logiciel, date_inst) VALUES
+('P1', 'Log1', '15/05/2021'),
+('P2', 'Log2', '17/09/2020'),
+('P4', 'Log5', '30/05/2022'),
+('P6', 'Log6', '20/05/2021'),
+('P6', 'Log1', '20/05/2021'),
+('P8', 'Log2', '19/05/2021'),
+('P8', 'Log6', '20/05/2021'),
+('P11', 'Log3', '20/04/2022'),
+('P12', 'Log4', '20/06/2020');
+
